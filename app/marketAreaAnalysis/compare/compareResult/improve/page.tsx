@@ -4,7 +4,6 @@ import NavBar from "@/components/NavBar";
 import { ImprovePart } from "@/components/ImprovePart";
 import { ImproveCarousel } from "@/components/ImproveCarousel";
 import { useEffect, useState } from "react";
-import { useAreaStore } from "@/lib/store";
 
 interface ImproveDataType {
   ImproveMethod: {

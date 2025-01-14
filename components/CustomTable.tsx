@@ -19,13 +19,13 @@ interface customDataType {
   featureUuid: string;
 }
 
-interface customDataPropsType {
-  newData?: {
-    featureName: string;
-    formula: string;
-    featureUuid: string;
-  }[];
-}
+// interface customDataPropsType {
+//   newData?: {
+//     featureName: string;
+//     formula: string;
+//     featureUuid: string;
+//   }[];
+// }
 
 export function CustomTable() {
   // { newData }: customDataPropsType 인자에 집어넣기

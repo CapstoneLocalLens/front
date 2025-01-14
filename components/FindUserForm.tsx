@@ -93,8 +93,9 @@ export function FindUserForm() {
       console.log(data);
       window.alert(`회원님의 이메일은 ${data.email} 입니다.`);
     } catch (e) {
-      const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
+      // const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
       // setError("이메일 찾기 실패: " + errorMessage);
+      console.error(e);
     } finally {
       setIsLoading(false);
     }
@@ -131,8 +132,7 @@ export function FindUserForm() {
       setResetToken(data.resetToken); // 상태 업데이트
       setIsDialogOpen(true); // 다이얼로그 열기
     } catch (e) {
-      const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
-      // setError("비밀번호 찾기 실패: " + errorMessage);
+      console.error(e);
     } finally {
       setIsLoading(false);
     }
@@ -173,8 +173,7 @@ export function FindUserForm() {
       setIsDialogOpen(false);
       router.push("/");
     } catch (e) {
-      const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
-      // setError("비밀번호 재설정 실패: " + errorMessage);
+      console.error(e);
     } finally {
       setIsLoading(false);
     }

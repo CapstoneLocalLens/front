@@ -65,8 +65,9 @@ export function CardForm() {
       console.log(loginSuccess);
       router.push("/inputArea");
     } catch (e) {
-      const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
+      // const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
       // setError("로그인 실패: " + errorMessage);
+      console.error(e);
     } finally {
       setIsLoading(false);
     }

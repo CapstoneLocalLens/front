@@ -97,8 +97,7 @@ export function SignUpForm() {
 
       return data;
     } catch (e) {
-      const errorMessage = e instanceof Error ? e.message : "알 수 없는 에러";
-      // setError("회원가입 실패: " + errorMessage);
+      console.error(e);
     } finally {
       setIsLoading(false);
     }

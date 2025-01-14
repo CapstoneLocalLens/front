@@ -3,7 +3,7 @@ import { RadarChartComponent } from "./RadarChart";
 import Image from "next/image";
 import personLogo from "@/images/person.png";
 
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { useAreaStore } from "@/lib/store";
 
 interface DateComparePartPropsType {
