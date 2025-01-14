@@ -71,6 +71,7 @@ interface differenceType {
   };
 }
 
+
 interface chartType {
   standard: string;
   ratio: number;

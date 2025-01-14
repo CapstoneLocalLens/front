@@ -37,7 +37,6 @@ interface TopTwoDataType {
 
 export default function MarketAreaAnalysisPage() {
   const name = useAreaStore((state) => state.name);
-  const { getState } = useAreaStore;
   const [districtData, setDistrictData] = useState<districtInfoType>({
     districtName: "",
     clusterName: "",

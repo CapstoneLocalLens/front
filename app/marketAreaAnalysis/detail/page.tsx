@@ -10,7 +10,7 @@ export default function MarketAreaAnalysisDetailPage() {
     <>
       <NavBar />
       <div className="flex">
-        <MapComponent />
+        {/* <MapComponent /> */}
         <AreaAnalysisDetailPart />
       </div>
     </>
