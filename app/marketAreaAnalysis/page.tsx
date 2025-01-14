@@ -66,13 +66,6 @@ export default function MarketAreaAnalysisPage() {
 
   const [areaIdx, setAreaIdx] = useState<number>(0);
 
-  // for (let i = 0; i < dummyAreas.length; i++) {
-  //   if (name === dummyAreas[i]) {
-  //     idx = i;
-  //     return;
-  //   }
-  // }
-
   useEffect(() => {
     const rehydrate = useAreaStore.persist.hasHydrated();
     if (!rehydrate || !name) {

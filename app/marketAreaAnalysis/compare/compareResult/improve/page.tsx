@@ -46,7 +46,6 @@ interface ImproveDataType {
 }
 
 export default function ImprovePage() {
-  const { globalAreaIdx, globalCompareAreaIdx } = useAreaStore();
   const [improveData, setImproveData] = useState<ImproveDataType>({
     ImproveMethod: [
       {

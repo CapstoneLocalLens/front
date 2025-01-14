@@ -112,7 +112,7 @@ export default function DateCompareResultPage() {
     ) {
       fetchData();
     }
-  }, [name, prevFormattedDate, curFormattedDate]);
+  }, [name, prevFormattedDate, curFormattedDate, prevDate, curDate]);
   return (
     <>
       <NavBar />
